@@ -2,7 +2,7 @@
 import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
 
-import Categories from "./pages/Categories";
+import Categories from "./pages/Home/Categories";
 
 function App() {
   return (

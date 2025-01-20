@@ -1,5 +1,5 @@
 import { useState } from "react";
-import categoriesData from "../data/categories.json";
+import categoriesData from "../../data/categories.json";
 import "./categories.scss";
 
 function Categories() {
