@@ -1,8 +1,8 @@
 import "./navbar.scss";
-import Logo from "../../images/header/Foodieland.logo.svg";
-import FacebookIcon from "../../images/header/facebook.icon.svg";
-import TwitterIcon from "../../images/header/twitter.icon.svg";
-import InstagramIcon from "../../images/header/instagram.icon.svg";
+import Logo from "../../assets/images/header/Foodieland.logo.svg";
+import FacebookIcon from "../../assets/images/header/facebook.icon.svg";
+import TwitterIcon from "../../assets/images/header/twitter.icon.svg";
+import InstagramIcon from "../../assets/images/header/instagram.icon.svg";
 
 function Navbar() {
   const socialsData = [

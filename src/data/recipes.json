@@ -1,0 +1,109 @@
+[
+  {
+    "id": "0",
+    "image": "../assets/images/recipes/Mask Group.png",
+    "title": "Big and Juicy Wagyu Beef Cheeseburger",
+    "description": "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ",
+    "authorPhoto":"../assets/images/recipes/photo.chef.png",
+    "authorName": "John Smith",
+    "date": "15 March 2022",
+    "iconTime": "./assets/img/recipes/Timer.svg",
+    "textTime": "30 Minutes",
+    "iconKnife": "./assets/img/recipes/ForkKnife.svg",
+    "textKnife": "Snack"
+  },
+  {
+    "id": "1",
+    "image": "../assets/images/recipes/fish.png",
+    "title": "Fresh Lime Roasted Salmon with Ginger Sauce",
+    "description": "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ",
+    "authorPhoto":"../assets/images/recipes/photo.chef.png",
+    "authorName": "John Smith",
+    "date": "15 March 2022",
+    "iconTime": "./assets/img/recipes/Timer.svg",
+    "textTime": "30 Minutes",
+    "iconKnife": "./assets/img/recipes/ForkKnife.svg",
+    "textKnife": "Fish"
+  },
+  {
+    "id": "2",
+    "image": "../assets/images/recipes/breakfast.png",
+    "title": "Strawberry Oatmeal Pancake with Honey Syrup",
+    "description": "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ",
+    "authorPhoto":"../assets/images/recipes/photo.chef.png",
+    "authorName": "John Smith",
+    "date": "15 March 2022",
+    "iconTime": "./assets/img/recipes/Timer.svg",
+    "textTime": "30 Minutes",
+    "iconKnife": "./assets/img/recipes/ForkKnife.svg",
+    "textKnife": "Breakfast"
+  },
+  {
+    "id": "3",
+    "image": "../assets/images/recipes/healthy.png",
+    "title": "Fresh and Healthy Mixed Mayonnaise Salad",
+    "description": "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ",
+    "authorPhoto":"../assets/images/recipes/photo.chef.png",
+    "authorName": "John Smith",
+    "date": "15 March 2022",
+    "iconTime": "./assets/img/recipes/Timer.svg",
+    "textTime": "30 Minutes",
+    "iconKnife": "./assets/img/recipes/ForkKnife.svg",
+    "textKnife": "Healthy"
+  },
+  {
+    "id": "4",
+    "image": "../assets/images/recipes/meat.png",
+    "title": "Chicken Meatballs with Cream Cheese",
+    "description": "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ",
+    "authorPhoto":"../assets/images/recipes/photo.chef.png",
+    "authorName": "John Smith",
+    "date": "15 March 2022",
+    "iconTime": "./assets/img/recipes/Timer.svg",
+    "textTime": "30 Minutes",
+    "iconKnife": "./assets/img/recipes/ForkKnife.svg",
+    "textKnife": "Meat"
+  },
+  {
+    "advertising": "./assets/img/recipes/Ads.png"
+  },
+  {
+    "id": "6",
+    "image": "../assets/images/recipes/sweet.png",
+    "title": "Fruity Pancake with Orange & Blueberry",
+    "description": "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ",
+    "authorPhoto":"../assets/images/recipes/photo.chef.png",
+    "authorName": "John Smith",
+    "date": "15 March 2022",
+    "iconTime": "./assets/img/recipes/Timer.svg",
+    "textTime": "30 Minutes",
+    "iconKnife": "./assets/img/recipes/ForkKnife.svg",
+    "textKnife": "Sweet"
+  },
+  {
+    "id": "7",
+    "image": "../assets/images/recipes/snack2.png",
+    "title": "The Best Easy One Pot Chicken and Rice",
+    "description": "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ",
+    "authorPhoto":"../assets/images/recipes/photo.chef.png",
+    "authorName": "John Smith",
+    "date": "15 March 2022",
+    "iconTime": "./assets/img/recipes/Timer.svg",
+    "textTime": "30 Minutes",
+    "iconKnife": "./assets/img/recipes/ForkKnife.svg",
+    "textKnife": "Snack"
+  },
+  {
+    "id": "8",
+    "image": "../assets/images/recipes/noodlist.png",
+    "title": "The Creamiest Creamy Chicken and Bacon Pasta",
+    "description": "Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ",
+    "authorPhoto":"../assets/images/recipes/photo.chef.png",
+    "authorName": "John Smith",
+    "date": "15 March 2022",
+    "iconTime": "./assets/img/recipes/Timer.svg",
+    "textTime": "30 Minutes",
+    "iconKnife": "./assets/img/recipes/ForkKnife.svg",
+    "textKnife": "Noodles"
+  }
+]

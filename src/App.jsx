@@ -1,16 +1,21 @@
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 import "./App.scss";
-import Navbar from "./assets/components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
+
+import Categories from "./pages/Categories";
 
 function App() {
   return (
     <>
-    <header>
-      <Navbar/>
-    </header>
-    <Routes>
-      <Route/>
-    </Routes>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        {/* <Routes>
+          <Route />
+        </Routes> */}
+        <Categories />
+      </main>
     </>
   );
 }
