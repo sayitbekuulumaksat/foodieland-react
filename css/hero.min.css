@@ -1,0 +1,159 @@
+.hero {
+  margin-top: 80px;
+}
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.hero__badge {
+  position: absolute;
+  top: 50px;
+  right: 560px;
+}
+.hero__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #fff;
+  width: 156px;
+  height: 45px;
+  border-radius: 30px;
+}
+.hero__name--text {
+  margin-left: 13px;
+}
+.hero__title {
+  font-size: 64px;
+  font-weight: 600;
+  text-align: left;
+  margin: 0px;
+}
+.hero__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+}
+.hero__block_left {
+  width: 620px;
+  height: 640px;
+  padding: 50px;
+  background: #e7fafe;
+  border-radius: 50px 0 0 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.hero__block_right {
+  width: 660px;
+  height: 640px;
+  padding: 0;
+}
+.hero__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hero__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.0509803922);
+  border-radius: 30px;
+  padding: 0px 16px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+.hero__link--icon {
+  margin-right: 10px;
+}
+.hero__maskpng {
+  height: 640px;
+}
+.hero__chef {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 99px;
+}
+.hero__chef_profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero__chef_info {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 16px;
+}
+.hero__chef_name {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  display: block;
+  margin-top: 8px;
+}
+.hero__recipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  border-radius: 16px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+}
+.hero__recipes--text {
+  margin-right: 15px;
+}/*# sourceMappingURL=hero.min.css.map */

@@ -49,8 +49,8 @@ function Navbar() {
             ))}
           </div>
         </div>
-        <hr className='header__hr' />
       </div>
+      <hr className='header__hr' />
     </div>
   );
 }
