@@ -1,0 +1,63 @@
+.instagram {
+  margin-top: 200px;
+  text-align: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e7f9fd), to(rgba(231, 249, 253, 0)));
+  background: -o-linear-gradient(bottom, #e7f9fd, rgba(231, 249, 253, 0));
+  background: linear-gradient(to top, #e7f9fd, rgba(231, 249, 253, 0));
+  padding-bottom: 80px;
+}
+.instagram__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.09px;
+}
+.instagram__description {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  width: 840px;
+  margin: 0 auto;
+}
+.instagram__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+}
+.instagram__photos_item {
+  width: 290px;
+  height: 445.44px;
+}
+.instagram__btn {
+  background-color: black;
+  border-radius: 16px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 230px;
+  height: 60px;
+  margin: 80px auto 0;
+}
+.instagram__btn a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 17px;
+}/*# sourceMappingURL=checkOutInstagram.min.css.map */

@@ -5,6 +5,9 @@ import Hero from "./pages/Home/Hero";
 import Categories from "./pages/Home/Categories";
 import Recipes from "./pages/Home/Recipes";
 import Chef from "./pages/Home/Chef";
+import CheckOutInstagram from "./pages/Home/CheckOutInstagram";
+import Delicious from "./pages/Home/delicious";
+import Inbox from "./pages/Home/Inbox";
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
         <Categories />
         <Recipes/>
         <Chef/>
+        <CheckOutInstagram/>
+        <Delicious/>
+        <Inbox/>
       </main>
     </>
   );

@@ -23,7 +23,7 @@ function Recipes() {
           </p>
           <div className='recipes__items'>
             {recipesData.map((recipe, i) =>
-              recipe["advertising"] ? (
+              recipe.advertising ? (
                 <a key={i} href='/' className='recipes__item advertising'>
                   <img src={recipe.advertising} />
                 </a>
