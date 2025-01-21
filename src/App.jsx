@@ -8,6 +8,7 @@ import Chef from "./pages/Home/Chef";
 import CheckOutInstagram from "./pages/Home/CheckOutInstagram";
 import Delicious from "./pages/Home/delicious";
 import Inbox from "./pages/Home/Inbox";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         <Delicious/>
         <Inbox/>
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </>
   );
 }
