@@ -1,52 +1,42 @@
+import { Link, NavLink } from "react-router-dom";
+import { FaInstagram, FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 import "./navbar.scss";
 import Logo from "../../assets/images/header/Foodieland.logo.svg";
-import FacebookIcon from "../../assets/images/header/facebook.icon.svg";
-import TwitterIcon from "../../assets/images/header/twitter.icon.svg";
-import InstagramIcon from "../../assets/images/header/instagram.icon.svg";
 
 function Navbar() {
-  const socialsData = [
-    {
-      src: FacebookIcon,
-      alt: "facebook.icon",
-    },
-    {
-      src: TwitterIcon,
-      alt: "twitter.icon",
-    },
-    {
-      src: InstagramIcon,
-      alt: "instagram.icon",
-    },
+  const menuData = [
+    { name: "Home", src: "/" },
+    { name: "Recipes", src: "recipes" },
+    { name: "Blog", src: "blog" },
+    { name: "Contact", src: "contact" },
+    { name: "About us", src: "about" },
   ];
   return (
     <div className='header'>
       <div className='container'>
         <div className='header__content'>
-          <a href='/' className='header__logo'>
+          <Link to='/' className='header__logo'>
             <img className='header__logo_img' src={Logo} alt='logo' />
-          </a>
+          </Link>
           <ul className='header__nav'>
-            {["Home", "Recipes", "Blog", "Contact", "About us"].map((item) => (
-              <li key={item} className='header__item'>
-                <a
-                  href={`/${item.toLowerCase().replace(" ", "-")}`}
-                  className='header__link'
-                >
-                  {item}
-                </a>
+            {menuData.map((menu, index) => (
+              <li key={index} className='header__item'>
+                <NavLink to={menu.src} className='header__link'>
+                  {menu.name}
+                </NavLink>
               </li>
             ))}
           </ul>
-          <div className='header__socials'>
-            {socialsData.map((item, i) => (
-              <img
-                key={i}
-                className='header__icon'
-                src={item.src}
-                alt={item.alt}
-              />
-            ))}
+          <div className='header__social'>
+            <a href='/' target='_blank' rel='noopener noreferrer'>
+              <FaFacebookF className='header__social_icon' />
+            </a>
+            <a href='/' target='_blank' rel='noopener noreferrer'>
+              <FaTelegramPlane className='header__social_icon' />
+            </a>
+            <a href='/' target='_blank' rel='noopener noreferrer'>
+              <FaInstagram className='header__social_icon' />
+            </a>
           </div>
         </div>
       </div>

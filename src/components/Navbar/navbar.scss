@@ -2,12 +2,12 @@
 @use "../../assets/helpers/vars";
 
 .header {
-  //   overflow: hidden;
-  //   position: fixed;
+  overflow: hidden;
+  position: fixed;
   top: 0;
   width: 100%;
   background-color: #fff;
-  //   z-index: 1;
+    z-index: 1;
   &__logo {
     width: 110px;
     height: 30px;
@@ -26,14 +26,32 @@
     line-height: 19.36px;
     text-align: left;
     color: vars.$nav-text-color;
+    display: inline-block;
+    transform-origin: center;
+    transition: transform 0.3s, color 0.3s;
+  }
+  .active,
+  &__link:hover {
+    color: rgb(0, 223, 148);
+    text-decoration: underline;
+    transform: scale(1.2);
   }
   &__item {
     margin-right: 60px;
   }
-  &__socials {
+  &__social {
     margin-right: 10px;
     width: 133px;
     @include mixins.dFlex();
+    &_icon {
+      font-size: 1.5em;
+      transition: 0.3s ease;
+      fill: lighten($color: #000000, $amount: 25);
+      &:hover {
+        transform: scale(1.2);
+        fill: #000000;
+      }
+    }
   }
   &__hr {
     color: #0000001a;
