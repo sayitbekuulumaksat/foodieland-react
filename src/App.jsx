@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./pages/Home/Hero";
 import Categories from "./pages/Home/Categories";
 import Recipes from "./pages/Home/Recipes";
+import Chef from "./pages/Home/Chef";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Hero/>
         <Categories />
         <Recipes/>
+        <Chef/>
       </main>
     </>
   );

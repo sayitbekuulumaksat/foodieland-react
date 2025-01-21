@@ -1,0 +1,35 @@
+.chef {
+  margin-top: 140px;
+}
+.chef__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.chef__info {
+  width: 526px;
+}
+.chef__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.09px;
+}
+.chef__description {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+}
+.chef__btn {
+  background-color: black;
+  border-radius: 16px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 20px 50px;
+  margin-top: 72px;
+}/*# sourceMappingURL=chef.min.css.map */
