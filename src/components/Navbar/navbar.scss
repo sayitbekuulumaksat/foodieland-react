@@ -1,5 +1,6 @@
 @use "../../assets/helpers/mixins";
 @use "../../assets/helpers/vars";
+@use 'sass:color';
 
 .header {
   overflow: hidden;
@@ -46,7 +47,7 @@
     &_icon {
       font-size: 1.5em;
       transition: 0.3s ease;
-      fill: lighten($color: #000000, $amount: 25);
+      fill: color.scale(#000000, $lightness: 25%);
       &:hover {
         transform: scale(1.2);
         fill: #000000;
