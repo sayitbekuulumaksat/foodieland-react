@@ -3,6 +3,7 @@ import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./pages/Home/Hero";
 import Categories from "./pages/Home/Categories";
+import Recipes from "./pages/Home/Recipes";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         </Routes> */}
         <Hero/>
         <Categories />
+        <Recipes/>
       </main>
     </>
   );

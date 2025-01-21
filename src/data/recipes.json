@@ -65,7 +65,7 @@
     "textKnife": "Meat"
   },
   {
-    "advertising": "./assets/images/recipes/Ads.png"
+    "advertising": "/src/assets/images/recipes/Ads.png"
   },
   {
     "id": "6",

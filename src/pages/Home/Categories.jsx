@@ -23,7 +23,7 @@ function Categories() {
           <div className='categories__menu'>
             {displayedCategories.map((category, index) => (
               <a href='/' key={index} className='categories__item'>
-                <img src={new URL(category.image, import.meta.url).href} />
+                <img src={category.image} />
                 <h3
                   style={{
                     background: `linear-gradient(to top, ${category.color}, #70824600)`,
