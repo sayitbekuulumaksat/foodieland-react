@@ -6,6 +6,8 @@ import CheckOutInstagram from "./CheckOutInstagram";
 import Delicious from "./delicious";
 import Inbox from "./Inbox";
 
+
+
 function Home() {
   return (
     <>

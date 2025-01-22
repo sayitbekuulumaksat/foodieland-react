@@ -23,9 +23,9 @@ function Inbox() {
           <img
             src={frootsPhoto}
             alt=''
-            className={saladPhoto}
+            className="inbox__img--salad"
           />
-          <img src='./assets/img/inbox/Photo.png' alt='' className='inbox__img' />
+          <img src={saladPhoto} alt='' className='inbox__img' />
         </div>
       </div>
     </section>
