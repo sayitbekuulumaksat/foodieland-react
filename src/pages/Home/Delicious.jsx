@@ -25,7 +25,7 @@ function Delicious() {
           </p>
           <div className='delicious__block'>
             {recipesData.map((recipe, index) => (
-                recipe.advertising ?(""): (
+                recipe.advertising ? null: (
               <div key={index} className='delicious__item'>
                 <img
                   src={recipe.image}
@@ -40,13 +40,13 @@ function Delicious() {
                     alt='Time Icon'
                     className='delicious__icon'
                   />
-                  <span>{recipe.textTime}</span>
+                  <span>{recipe.prepTime}</span>
                   <img
                     src={recipe.iconKnife}
                     alt='Knife Icon'
                     className='delicious__icon'
                   />
-                  <span>{recipe.textKnife}</span>
+                  <span>{recipe.type}</span>
                 </div>
                 <div className='delicious__like'>
                   <img

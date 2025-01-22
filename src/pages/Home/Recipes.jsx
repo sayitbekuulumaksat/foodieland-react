@@ -42,13 +42,13 @@ function Recipes() {
                       alt='Time Icon'
                       className='recipes__icon'
                     />
-                    <span>{recipe.textTime}</span>
+                    <span>{recipe.prepTime}</span>
                     <img
                       src={recipe.iconKnife}
                       alt='Knife Icon'
                       className='recipes__icon'
                     />
-                    <span>{recipe.textKnife}</span>
+                    <span>{recipe.type}</span>
                   </div>
                   <div className='recipes__like'>
                     <img
