@@ -29,11 +29,11 @@
     color: vars.$nav-text-color;
     display: inline-block;
     transform-origin: center;
-    transition: transform 0.3s, color 0.3s;
+    transition: transform 0.3s, color 0.4s;
   }
   .active,
   &__link:hover {
-    color: rgb(0, 223, 148);
+    color:#f89d36;
     text-decoration: underline;
     transform: scale(1.2);
   }

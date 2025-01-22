@@ -1,9 +1,7 @@
-import "./footer.scss"
+import { Link, NavLink } from "react-router-dom";
+import { FaInstagram, FaFacebookF, FaTelegramPlane } from "react-icons/fa";
+import "./footer.scss";
 import Logo from "../../assets/images/header/Foodieland.logo.svg";
-import FacebookIcon from "../../assets/images/header/facebook.icon.svg";
-import TwitterIcon from "../../assets/images/header/twitter.icon.svg";
-import InstagramIcon from "../../assets/images/header/instagram.icon.svg";
-
 function Footer() {
   const menuData = [
     { name: "Home", src: "/" },
@@ -12,28 +10,14 @@ function Footer() {
     { name: "Contact", src: "contact" },
     { name: "About us", src: "about" },
   ];
-  const socialsData = [
-    {
-      src: FacebookIcon,
-      alt: "facebook.icon",
-    },
-    {
-      src: TwitterIcon,
-      alt: "twitter.icon",
-    },
-    {
-      src: InstagramIcon,
-      alt: "instagram.icon",
-    },
-  ];
   return (
     <footer className='footer'>
       <div className='container'>
         <div className='footer__content'>
           <div className='footer__block'>
-            <a href='/' className='footer__logo'>
+            <Link to='/' className='footer__logo'>
               <img className='footer__logo_img' src={Logo} alt='logo' />
-            </a>
+            </Link>
             <p className=' footer__description'>
               Lorem ipsum dolor sit amet, consectetuipisicing elit,{" "}
             </p>
@@ -41,9 +25,9 @@ function Footer() {
           <ul className='footer__nav'>
             {menuData.map((menu, index) => (
               <li className='footer__item' key={index}>
-                <a href={menu.src} className='footer__link'>
+                <NavLink to={menu.src} className='footer__link'>
                   {menu.name}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -51,11 +35,17 @@ function Footer() {
         <hr className='footer__hr' />
         <div className='footer__copytext'>
           &copy; 2020 Flowbase. Powered by Webflow
-            <div  className='footer__socials'>
-          {socialsData.map((social, i) => (
-              <img key={i} className='footer__icon' src={social.src} alt={social.alt} />
-              ))}
-            </div>
+          <div className='footer__social'>
+            <a href='/' target='_blank' rel='noopener noreferrer'>
+              <FaFacebookF className='footer__social_icon' />
+            </a>
+            <a href='/' target='_blank' rel='noopener noreferrer'>
+              <FaTelegramPlane className='footer__social_icon' />
+            </a>
+            <a href='/' target='_blank' rel='noopener noreferrer'>
+              <FaInstagram className='footer__social_icon' />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

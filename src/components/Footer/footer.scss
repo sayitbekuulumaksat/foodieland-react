@@ -1,5 +1,6 @@
 @use "../../assets/helpers/mixins";
 @use "../../assets/helpers/vars";
+@use "sass:color";
 .footer {
   margin-top: 160px;
   padding-bottom: 50px;
@@ -21,6 +22,15 @@
     text-align: left;
     color: vars.$nav-text-color;
     // margin-right: 60px;
+    display: inline-block;
+    transform-origin: center;
+    transition: transform 0.3s, color 0.4s;
+  }
+  .active,
+  &__link:hover {
+    color: #f89d36;
+    text-decoration: underline;
+    transform: scale(1.2);
   }
   &__item {
     margin-left: 60px;
@@ -36,11 +46,21 @@
     font-size: 18px;
     color: #00000099;
   }
-  &__socials {
+  &__social {
     width: 133px;
     @include mixins.dFlex();
     position: absolute;
     top: 0px;
     right: 0;
+
+    &_icon {
+      font-size: 1.5em;
+      transition: 0.3s ease;
+      fill: color.scale(#000000, $lightness: 25%);
+      &:hover {
+        transform: scale(1.2);
+        fill: #000000;
+      }
+    }
   }
 }

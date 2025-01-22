@@ -1,28 +1,12 @@
-.header {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #fff;
-  z-index: 1;
+.footer {
+  margin-top: 160px;
+  padding-bottom: 50px;
 }
-.header__logo {
+.footer__logo {
   width: 110px;
   height: 30px;
 }
-.header__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 0;
-}
-.header__nav {
+.footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +17,18 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.header__link {
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__link {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -50,18 +45,27 @@
   transition: transform 0.3s, color 0.4s;
   transition: transform 0.3s, color 0.4s, -webkit-transform 0.3s;
 }
-.header .active, .header__link:hover {
+.footer .active, .footer__link:hover {
   color: #f89d36;
   text-decoration: underline;
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
 }
-.header__item {
-  margin-right: 60px;
+.footer__item {
+  margin-left: 60px;
 }
-.header__social {
-  margin-right: 10px;
+.footer hr {
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  margin: 48px 0;
+}
+.footer__copytext {
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.footer__social {
   width: 133px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,21 +76,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 0;
 }
-.header__social_icon {
+.footer__social_icon {
   font-size: 1.5em;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
   fill: #404040;
 }
-.header__social_icon:hover {
+.footer__social_icon:hover {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
   fill: #000000;
-}
-.header__hr {
-  color: rgba(0, 0, 0, 0.1019607843);
-  margin: 0;
-}/*# sourceMappingURL=navbar.min.css.map */
+}/*# sourceMappingURL=footer.min.css.map */
