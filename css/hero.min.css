@@ -86,7 +86,7 @@
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.0509803922);
   border-radius: 30px;
-  padding: 0px 16px;
+  padding: 10px 16px;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   font-weight: 500;
@@ -173,5 +173,7 @@
   background-color: #fff;
   padding: 5px;
   right: 0px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }/*# sourceMappingURL=hero.min.css.map */

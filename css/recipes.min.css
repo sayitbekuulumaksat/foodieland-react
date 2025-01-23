@@ -43,6 +43,7 @@
   border-radius: 30px;
   width: 368px;
   height: 250px;
+  margin: 0 auto;
 }
 .recipes__info {
   margin: 25px;
@@ -78,6 +79,7 @@
   width: 25px;
   height: 25px;
   margin-top: 10px;
+  margin-left: 10px;
   cursor: pointer;
 }
 .recipes__like--redicon {

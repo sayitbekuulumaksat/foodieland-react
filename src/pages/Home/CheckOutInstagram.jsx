@@ -38,7 +38,7 @@ function CheckOutInstagram() {
                 key={index}
                 src={screenPhoto.screen}
                 alt='insta-photo'
-                class='instagram__photos_item '
+                className='instagram__photos_item '
               />
             ))}
           </div>

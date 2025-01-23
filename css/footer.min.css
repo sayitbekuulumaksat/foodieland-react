@@ -6,6 +6,9 @@
   width: 110px;
   height: 30px;
 }
+.footer__description {
+  margin-top: 30px;
+}
 .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
