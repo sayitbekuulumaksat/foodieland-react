@@ -1,11 +1,13 @@
-import RecipeDetails from "./RecipeDetails"
+import RecipeDetails from "./RecipeDetails";
+import Inbox from "../Home/Inbox";
 
 function Recipes() {
   return (
     <>
-    <RecipeDetails/>
+      <RecipeDetails />
+      <Inbox/>
     </>
-  )
+  );
 }
 
-export default Recipes
+export default Recipes;
