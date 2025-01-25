@@ -5,7 +5,7 @@ import RecipesContext from "./context/RecipesContext";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
-import Recipes from "./pages/Recipes/Recipes";
+import Recipes from "./pages/Recipes/RecipesPage";
 
 
 function App() {

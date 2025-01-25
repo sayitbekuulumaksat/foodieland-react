@@ -1,6 +1,7 @@
 import "./recipeDetails.scss";
 import { useContext } from "react";
-import { FaPlayCircle } from "react-icons/fa";
+import { FaPrint } from "react-icons/fa";
+import { FaRegShareSquare } from "react-icons/fa";
 import RecipesContext from "../../context/RecipesContext";
 
 function RecipeDetails() {
@@ -14,34 +15,50 @@ function RecipeDetails() {
           <div className='recipe__detailes'>
             <div className='recipe__info'>
               <h3 className='text-5xl font-semibold'>{recipe.title}</h3>
-              <div className='recipe__time flex items-center gap-10 mt-15'>
-                <div className='flex items-center gap-4'>
-                  <img src={recipe.author.photo} />
-                  <div>
-                    <strong>{recipe.author.name}</strong>
-                    <span className='block'>{recipe.author.date}</span>
+              <div className='recipe__header_block grid grid-cols-3 gap-10 mt-15'>
+                <div className='recipe__time grid grid-cols-4  divide-x-2 divide-gray-200 items-center  col-span-2 '>
+                  <div className='flex items-center gap-4 justify-center'>
+                    <img src={recipe.author.photo} />
+                    <div>
+                      <strong>{recipe.author.name}</strong>
+                      <span className='block'>{recipe.author.date}</span>
+                    </div>
+                  </div>
+                  {/* <div className='border-l h-10 border-gray-400'></div> */}
+                  <div className='flex items-center gap-4 justify-center'>
+                    <img src={recipe.iconTime} />
+                    <div>
+                      <span className='font-medium'>PREP TIME</span>
+                      <span className='block'>{recipe.prepTime}</span>
+                    </div>
+                  </div>
+                  {/* <div className='border-l h-10 border-gray-400'></div> */}
+                  <div className='flex items-center gap-4 justify-center'>
+                    <img src={recipe.iconTime} alt='Author' />
+                    <div>
+                      <span className='font-medium block'>COOK TIME</span>
+                      <span>{recipe.prepTime}</span>
+                    </div>
+                  </div>
+                  {/* <div className='border-l h-10 border-gray-400'></div> */}
+                  <div className='flex items-center justify-center gap-4'>
+                    <img src={recipe.iconKnife} alt='Knife icon' />
+                    <p>{recipe.type}</p>
                   </div>
                 </div>
-                <div className='border-l h-10 border-gray-400'></div>
-                <div className='flex items-center gap-4'>
-                  <img src={recipe.iconTime} />
-                  <div>
-                    <span className='font-medium'>PREP TIME</span>
-                    <span className='block'>{recipe.prepTime}</span>
+                <div className='print-And-Share justify-self-end col-span-1 flex  items-center'>
+                  <div className='text-center'>
+                    <div className='bg-[#E7FAFE] p-5 mr-5 rounded-full mb-5'>
+                      <FaPrint className='w-8 h-8' />
+                    </div>
+                    <span>PRINT</span>
                   </div>
-                </div>
-                <div className='border-l h-10 border-gray-400'></div>
-                <div className='flex items-center gap-4'>
-                  <img src={recipe.iconTime} alt='Author' />
-                  <div>
-                    <span className='font-medium block'>COOK TIME</span>
-                    <span>{recipe.prepTime}</span>
+                  <div className='text-center'>
+                    <div className='bg-[#E7FAFE] p-5 rounded-full mb-5'>
+                      <FaRegShareSquare className='w-8 h-8' />
+                    </div>
+                    <span>SHARE</span>
                   </div>
-                </div>
-                <div className='border-l h-10 border-gray-400'></div>
-                <div className='flex gap-4'>
-                  <img src={recipe.iconKnife} alt='Knife icon' />
-                  <p>{recipe.type}</p>
                 </div>
               </div>
               <div className='recipe__block mt-20 grid grid-cols-3 gap-10 '>
@@ -50,15 +67,13 @@ function RecipeDetails() {
                     className='modal__block_video size-full rounded-3xl'
                     src={recipe.video}
                     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                    referrerpolicy='strict-origin-when-cross-origin'
-                    allowfullscreen
                   ></iframe>
                 </div>
                 <div className='nutrition col-span-1 bg-[#E7FAFE] p-10 rounded-3xl '>
                   <h3 className='font-semibold text-2xl'>
                     Nutrition Information
                   </h3>
-                  <div className='grid grid-cols-2 justify-items-stretch mt-5'>
+                  <div className='grid grid-cols-2 justify-items-stretch mt-5 '>
                     <span className='text-[#00000099]'>Calories</span>
                     <strong className='justify-self-end'>
                       {recipe.nutrition.calories}
