@@ -4,7 +4,6 @@ import RecipesContext from "../../context/RecipesContext";
 function OtherRecipes() {
   const recipesData = useContext(RecipesContext);
   const recipe = recipesData.slice(1, 4);
-  console.log(recipe);
   return (
     <div>
       <h3 className='text-3xl font-semibold'>Other Recipe</h3>
