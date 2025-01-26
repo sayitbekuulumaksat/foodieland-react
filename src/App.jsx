@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Recipes from "./pages/Recipes/RecipesPage";
 import Blog from "./pages/Blog/Blog";
+import About from "./pages/AboutUs/About";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path="recipes" element= {<Recipes/>}/>
             <Route path="blog" element= {<Blog/>}/>
+            <Route path="about" element = {<About/>}/>
           </Routes>
         </RecipesContext.Provider>
       </main>
