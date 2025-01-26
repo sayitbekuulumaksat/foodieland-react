@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home";
 import Recipes from "./pages/Recipes/RecipesPage";
 import Blog from "./pages/Blog/Blog";
 import About from "./pages/AboutUs/About";
+import Conacts from "./pages/Contacts/Conacts";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="recipes" element= {<Recipes/>}/>
             <Route path="blog" element= {<Blog/>}/>
             <Route path="about" element = {<About/>}/>
+            <Route path="contact" element= {<Conacts/>}/>
           </Routes>
         </RecipesContext.Provider>
       </main>
