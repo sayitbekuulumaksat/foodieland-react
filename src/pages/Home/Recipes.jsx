@@ -4,12 +4,13 @@ import heartIcon from "/src/assets/images/recipes/heart.svg";
 import redHeart from "/src/assets/images/recipes/redheart.svg";
 
 function Recipes() {
+  const recipes = recipesData.slice(0, 9);
   const handleToggleFavorite = (e) => {
-    console.log(e.target.src)
-    if(e.target.src === heartIcon){
-      e.target.src = redHeart
-    }else{
-      e.target.src = heartIcon
+    console.log(e.target.src);
+    if (e.target.src === heartIcon) {
+      e.target.src = redHeart;
+    } else {
+      e.target.src = heartIcon;
     }
   };
   return (
@@ -22,7 +23,7 @@ function Recipes() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <div className='recipes__items'>
-            {recipesData.map((recipe, i) =>
+            {recipes.map((recipe, i) =>
               recipe.advertising ? (
                 <a key={i} href='/' className='recipes__item advertising'>
                   <img src={recipe.advertising} />
