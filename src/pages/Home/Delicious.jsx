@@ -1,8 +1,8 @@
 import "./delicious.scss";
 import { useContext } from "react";
 import RecipesContext from "../../context/RecipesContext";
-import heartIcon from "/foodieland-react/images/recipes/heart.svg";
-import redHeart from "/foodieland-react/images/recipes/redheart.svg";
+import heartIcon from "../../assets/images/recipes/heart.svg";
+import redHeart from "../../assets/images/recipes/redheart.svg";
 
 function Delicious() {
   const recipesData = useContext(RecipesContext)

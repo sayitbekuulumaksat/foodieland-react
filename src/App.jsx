@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
-import recipesData from "/foodieland-react/data/recipes.json?url";
+// import recipesData from "/foodieland-react/data/recipes.json?url";
 import RecipesContext from "./context/RecipesContext";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [recipes, setRecipes] = useState([]);
   useEffect(() => {
-    fetch(recipesData) // Эскертүү: / менен башталат
+    fetch("/foodieland-react/data/recipes.json") 
       .then((response) => {
         if (!response.ok) {
           throw new Error(
@@ -25,7 +25,7 @@ function App() {
         return response.json();
       })
       .then((data) => {
-        setRecipes(data); // Фетч аркылуу алынган маалыматты сактоо
+        setRecipes(data); 
       })
       .catch((error) => {
         console.error("Error loading recipes:", error);
@@ -40,10 +40,10 @@ function App() {
         <RecipesContext.Provider value={recipes}>
           <Routes>
             <Route path='/foodieland-react/' element={<Home />} />
-            <Route path='/foodieland-react/recipes' element={<Recipes />} />
-            <Route path='/foodieland-react/blog' element={<Blog />} />
-            <Route path='/foodieland-react/about' element={<About />} />
-            <Route path='/foodieland-react/contact' element={<Conacts />} />
+            <Route path='recipes' element={<Recipes />} />
+            <Route path='blog' element={<Blog />} />
+            <Route path='about' element={<About />} />
+            <Route path='contact' element={<Conacts />} />
             <Route path='*' element={<NotFount />} />
           </Routes>
         </RecipesContext.Provider>
