@@ -13,6 +13,7 @@ function Hero() {
     return <p>Data is not available</p>;
   }
   const recipe = recipesData[0];
+  console.log(recipe)
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);

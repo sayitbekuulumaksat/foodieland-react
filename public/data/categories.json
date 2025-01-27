@@ -1,0 +1,62 @@
+[
+  {
+    "image": "/foodieland-react/images/categories/Breakfast.svg",
+    "title": "Breakfast",
+    "color": "#7082461A"
+  },
+  {
+    "image": "/foodieland-react/images/categories/Vegan.svg",
+    "title": "Vegan",
+    "color": "#6CC63F1A"
+  },
+  {
+    "image": "/foodieland-react/images/categories/Meat.svg",
+    "title": "Meat",
+    "color": "#CC261B1A"
+  },
+  {
+    "image": "/foodieland-react/images/categories/Dessert.svg",
+    "title": "Dessert",
+    "color": "#F09E001A"
+  },
+  {
+    "image": "/foodieland-react/images/categories/lunch.svg",
+    "title": "Lunch",
+    "color": "#0000000D"
+  },
+  {
+    "image": "/foodieland-react/images/categories/Chocolate.svg",
+    "title": "Chocolate",
+    "color": "#0000000D"
+  },
+  {
+    "image": "/foodieland-react/images/categories/Breakfast.svg",
+    "title": "Breakfast",
+    "color": "#7082461A"
+  },
+  {
+    "image": "/foodieland-react/images/categories/Vegan.svg",
+    "title": "Vegan",
+    "color": "#6CC63F1A"
+  },
+  {
+    "image": "/foodieland-react/images/categories/Meat.svg",
+    "title": "Meat",
+    "color": "#CC261B1A"
+  },
+  {
+    "image": "/foodieland-react/images/categories/Dessert.svg",
+    "title": "Dessert",
+    "color": "#F09E001A"
+  },
+  {
+    "image": "/foodieland-react/images/categories/lunch.svg",
+    "title": "Lunch",
+    "color": "#0000000D"
+  },
+  {
+    "image": "/foodieland-react/images/categories/Chocolate.svg",
+    "title": "Chocolate",
+    "color": "#0000000D"
+  }
+]

@@ -1,5 +1,5 @@
 import "./chef.scss";
-import chefImg from "../../assets/images/recipes/chefWithF.png"
+import chefImg from "/foodieland-react/images/recipes/chefWithF.png"
 
 function Chef() {
   return (

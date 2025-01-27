@@ -1,12 +1,25 @@
+import { useEffect } from "react";
 import { useState } from "react";
-import categoriesData from "../../data/categories.json";
+// import categoriesData from "/foodieland-react/data/categories.json?url";
 import "./categories.scss";
 
 function Categories() {
+  const [categories, setCategories] = useState([]);
   const [showAll, setShowAll] = useState(false);
-  const displayedCategories = showAll
-    ? categoriesData
-    : categoriesData.slice(0, 6);
+  useEffect(() => {
+    fetch("/foodieland-react/data/categories.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch categories");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setCategories(data);
+      });
+  }, []);
+  console.log(categories);
+  const displayedCategories = showAll ? categories : categories.slice(0, 6);
   return (
     <section className='categories'>
       <div className='container'>

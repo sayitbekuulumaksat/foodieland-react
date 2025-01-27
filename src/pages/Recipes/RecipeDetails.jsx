@@ -1,7 +1,7 @@
 import "./recipeDetails.scss";
-import { useContext } from "react";
 import { FaPrint } from "react-icons/fa";
 import { FaRegShareSquare } from "react-icons/fa";
+import { useContext } from "react";
 import RecipesContext from "../../context/RecipesContext";
 
 function RecipeDetails() {

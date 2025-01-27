@@ -5,11 +5,11 @@ import Logo from "../../assets/images/header/Foodieland.logo.svg";
 
 function Navbar() {
   const menuData = [
-    { name: "Home", src: "/" },
-    { name: "Recipes", src: "recipes" },
-    { name: "Blog", src: "blog" },
-    { name: "Contact", src: "contact" },
-    { name: "About us", src: "about" },
+    { name: "Home", src: "/foodieland-react/" },
+    { name: "Recipes", src: "/foodieland-react/recipes" },
+    { name: "Blog", src: "/foodieland-react/blog" },
+    { name: "Contact", src: "/foodieland-react/contact" },
+    { name: "About us", src: "/foodieland-react/about" },
   ];
   return (
     <div className='header'>

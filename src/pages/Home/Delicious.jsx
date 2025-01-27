@@ -1,9 +1,11 @@
 import "./delicious.scss";
-import recipesData from "../../data/recipes.json";
-import heartIcon from "/src/assets/images/recipes/heart.svg";
-import redHeart from "/src/assets/images/recipes/redheart.svg";
+import { useContext } from "react";
+import RecipesContext from "../../context/RecipesContext";
+import heartIcon from "/foodieland-react/images/recipes/heart.svg";
+import redHeart from "/foodieland-react/images/recipes/redheart.svg";
 
 function Delicious() {
+  const recipesData = useContext(RecipesContext)
   const recipes = recipesData.slice(5, 14);
   const handleToggleFavorite = (e) => {
     console.log(e.target.src);
